@@ -23,6 +23,6 @@ public class PlanetDistanceCalculator {
     	// your code goes here
     	double distance1 = getDistance(planet1);
         double distance2 = getDistance(planet2);
-        return Math.abs(distance1 - distance2);
+        return Math.round(Math.abs(distance1 - distance2)*10.0)/10.0;
     }
 }
