@@ -10,7 +10,13 @@ public class PlanetDistanceCalculator {
 
     public double getDistance(String planetName) {
     	// your code goes here
-        return solarSystemService.getDistanceFromSun(planetName);
+        double distance = solarSystemService.getDistanceFromSun(planetName);
+
+        if (distance <= 0.0) {
+            throw new IllegalArgumentException("Unknown planet: " + planetName);
+        }
+
+        return distance;
     }
 
     public double calculateRelativeDistance(String planet1, String planet2) {

@@ -10,9 +10,9 @@ public class SolarSystemServiceMock implements SolarSystemService {
 		 this.planetDistances = new HashMap<>();
 		 planetDistances.put("Mercury", 57.9);
 		 planetDistances.put("Venus", 108.2);
-		 planetDistances.put("Earth", 149.6);
+		 planetDistances.put("Earth", 150.0);
 		 planetDistances.put("Mars", 227.9);
-		 planetDistances.put("Jupiter", 778.3);
+		 planetDistances.put("Jupiter", 778.0);
 		 planetDistances.put("Saturn", 1427.0);
 		 planetDistances.put("Uranus", 2871.0);
 		 planetDistances.put("Neptune", 4497.1);
